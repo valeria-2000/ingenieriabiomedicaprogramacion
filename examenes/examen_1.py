@@ -25,3 +25,4 @@ else:
         print (MENSAJE_ESTADO_ALERTA)   
     else:
         print (MENSAJE_ESTADO_PELIGRO)
+        
