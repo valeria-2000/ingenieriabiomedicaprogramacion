@@ -14,7 +14,7 @@ NOMBRE_PERSONAL = "Valeria"
 _nombreUsuario = " "
 _edadUsuario = 0
 #-------------CODIGO------------
-print(PREGUNTA_BIENVENIDO)
+print(MENSAJE_BIENVENIDO)
 _nombreUsuario = input (PREGUNTA_NOMBRE)
 if (NOMBRE_PERSONAL == _nombreUsuario) :
     print(MENSAJE_TOCAYO)
