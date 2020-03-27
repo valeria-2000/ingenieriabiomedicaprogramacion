@@ -13,7 +13,6 @@ PREGUNTA_NUMERO_2 = """
         : """       
 #--------------------ENTRADA------------------
 _nuemeroIngresado = 0 
-_personaTemperatura = 0.0
 pesoPacientesIniciales = [32,64,74,85,98,115,122,127,137,148]
 
 #--------------------CODIGO-------------------
