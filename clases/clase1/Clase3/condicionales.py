@@ -8,7 +8,7 @@ MENSAJE_ADULTO = "Eres Adulto"
 MENSAJE_VIEJO = "Eres Viejo"
 MENSANJE_DESPEDIDA = "CHAO"
 
-#------------VARIABLES-----------
+#------------VARIABLES-----------#
 NOMBRE_PERSONAL = "Valeria"
 #-------------ENTRADAS------------
 _nombreUsuario = " "

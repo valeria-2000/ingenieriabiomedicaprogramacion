@@ -1,11 +1,12 @@
-#-------------Mensajes----------------#
+#-----------------MENSAJE----------------#
 PREGUNTA_NOMBRE="ingrese su nombre : "
 MENSAJE_BIENVENIDO="Bienvenido"
 PREGUNTA_EDAD="ingrese su edad : "
 MENSAJE_EDAD="ingrese su edad "
 PREGUNTA_ESTATURA="ingrese su estatura"
-#-------------------------------------
+#-----------------ENTRADA------------------
 _nombrePersona = input( PREGUNTA_NOMBRE )
+#-----------------CODIGO-----------------
 print(MENSAJE_BIENVENIDO,_nombrePersona, MENSAJE_BIENVENIDO)
 _edadPersona =int(input(PREGUNTA_EDAD  ))
 print(MENSAJE_EDAD,_edadPersona)
