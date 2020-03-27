@@ -16,6 +16,8 @@ MENSAJE_ERROR = "entrada no valida, solo admitimos 1,2,3,4,5 "
 #--------------ENTTRADA----------------
 _numeroIngresado = 0 
 _edadPersona = 0
+_listaProductos = []
+
 #---------------CODIGO-------------------
 print (MENSAJE_BIENVENIDO)
 _numeroIngresado = int (input (PREGUNTA_NUMERO))
@@ -32,23 +34,32 @@ while (_numeroIngresado == 1) :
     _numeroIngresado = int (input (PREGUNTA_NUMERO))
 
 while(_numeroIngresado ==2)  :
-    productos = []
-    _listaProductos = input("que producto desea comprar : ")
-    print ((_listaProductos))
+    _listaProductos.append(input("que producto desea comprar : "))
     respuesta = input ("Desea ingresar mas productos? s -> si  n->no : ")
     while (respuesta =="s") :
-        productos.append(input("ingrese los producto que quiere comprar : "))
+        _listaProductos.append(input("ingrese los producto que quiere comprar : "))
         respuesta = input ("Desea ingresar mas productos? s -> si  n->no : ") 
-    print (_listaProductos,productos)
+    print (_listaProductos)
     _numeroIngresado = int (input (PREGUNTA_NUMERO))
 
 while(_numeroIngresado ==3) :
-    print (_listaProductos,productos)
+    print (_listaProductos)
     _numeroIngresado = int (input (PREGUNTA_NUMERO))
 
 while(_numeroIngresado ==4) :
-    _listaProductos,productos.pop(input("ingrese el producto que ya no quiere llevar : "))
-    print (_listaProductos,producto)
+    _productoParaEliminar= input("ingrese el producto que ya no quiere llevar : ")
+    eliminar = "no existe"
+    for i in range(len(_listaProductos)):
+        if(_productoParaEliminar == _listaProductos[i]):
+            eliminar = i
+    if (eliminar != "no exite"):
+        eliminado = _listaProductos.pop(eliminar)     
+        print("El producto que fue eliminado es", eliminado)
+        respuesta = input("si desea eliminar otro articulo ingrese si :") 
+        while(respuesta == "si"):
+            eliminado = _listaProductos.pop(eliminar)
+            print("el producto que fue eliminado es" , eliminado)
+            respuesta = input("si desea eliminar otro articulo ingrese si :")
     _numeroIngresado = int (input (PREGUNTA_NUMERO))
 
 
