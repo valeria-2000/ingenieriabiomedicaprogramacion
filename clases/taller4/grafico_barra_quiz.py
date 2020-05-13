@@ -11,8 +11,8 @@ plt.xticks(rotation=90)
 figure = plt.gcf()
 figure.set_size_inches(12,23)
 plt.savefig("Barrios1.png")
-#plt.close
-plt.show()
+plt.close
+#plt.show()
 
 plt.bar (barrios ["Barrio"].values(),barrios ["Gas"].values())
 plt.title("GRAFICO DE BARRAS MEDELLÍN ")
@@ -22,8 +22,8 @@ plt.xticks(rotation=90)
 figure = plt.gcf()
 figure.set_size_inches(12,23)
 plt.savefig("Barrios2.png")
-#plt.close
-plt.show()
+plt.close
+#plt.show()
 
 #electrocardiograma
 ecg =p.read_csv("ecg_taller.csv",encoding='UTF-8',header=0, delimiter=";").to_dict()
@@ -34,9 +34,9 @@ plt.xlabel("Tiempo(ms)")
 plt.ylabel("Volataje(uV)")
 plt.plot(x,y)
 plt.savefig("mi_primer_ecg.png")
-#plt.close
-plt.show()
-
+plt.close
+#plt.show()
+print (" en el electrocardiograma veo 6 picos ")
 # grafico de pie
 
 labels = 'Bogota', 'Medellin', 'Leticia', 'villavicencio'
@@ -45,4 +45,5 @@ explode = [0,0,0.2,0]
 plt.pie (sizes, explode=explode, labels=labels , shadow=True, startangle=45 )
 plt.title ("Crisis del COVID-19")
 plt.savefig ("Grafico_pie_covid.png")
-plt.show()
+plt.close
+#plt.show()
