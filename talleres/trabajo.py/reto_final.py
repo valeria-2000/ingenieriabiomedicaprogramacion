@@ -16,7 +16,9 @@ while (validador):
     try:
         validador = validador_archivo(PREGUNTA_NOMBRE)
         grafica_1 = p.read_csv(archivoUsuario,encoding='UTF-8',header=0, delimiter=";").to_dict()
-        plt.bar (grafica_1 ["muestra"].values(),grafica_1["valor"].values(), color = "r")
+        x = list (grafica_1["muestra"].values())
+        y = list (grafica_1 ["valor"].values())
+        plt.plot(x,y)
     except FileNotFoundError :
         print("ingresaste un archivo que no existe")
 
